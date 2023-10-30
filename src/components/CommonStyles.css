@@ -1,0 +1,106 @@
+/* CommonStyles.css */
+
+/* ========= GLOBAL STYLES ========= */
+
+
+/* ========= NAVBAR STYLES ========= */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.center-nav-links {
+  justify-content: center;
+}
+
+/* Overriding Bootstrap's default navbar breakpoint */
+@media (max-width: 480px) {
+  .navbar-expand-md {
+    /* ... Other styles ... */
+  }
+  /* ... Other responsive styles ... */
+}
+
+/* ========= CARD STYLES ========= */
+.card {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card-header {
+  background-color: #f5f5f5;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 12px 16px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* ========= CONTAINER STYLES ========= */
+.container {
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ========= FORM STYLES ========= */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+/* ========= BUTTON STYLES ========= */
+.logout-btn {
+  color: white;
+  border-radius: 50px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.custom-hover-button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 25px;
+}
+
+.custom-hover-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ========= SPINNER STYLES ========= */
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

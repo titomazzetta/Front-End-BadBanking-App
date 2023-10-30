@@ -1,0 +1,32 @@
+.alldata-container {
+    padding-top: 100px;  /* A padding to ensure we start below the navbar */
+}
+
+.alldata-content {
+    position: relative;
+    top: 0;  /* Ensures the starting position does not move upwards */
+    padding: 20px;
+}
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .card-header {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .data-presentation {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
